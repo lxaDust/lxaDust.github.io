@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.18.5">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://gcore.jsdelivr.net'>
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>前端 - LXA</title>
+
+  
+    <meta name="description" content="前端的学习记录，多为零碎知识点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端">
+<meta property="og:url" content="http://example.com/2023/01/04/%E5%89%8D%E7%AB%AF/index.html">
+<meta property="og:site_name" content="LXA">
+<meta property="og:description" content="前端的学习记录，多为零碎知识点">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://great.wzznft.com/i/2023/01/04/i775ei.png">
+<meta property="og:image" content="https://great.wzznft.com/i/2023/01/04/i7p5bh.png">
+<meta property="article:published_time" content="2023-01-04T02:46:39.068Z">
+<meta property="article:modified_time" content="2023-01-04T04:01:24.077Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://great.wzznft.com/i/2023/01/04/i775ei.png">
+  
+  
+
+  <!-- feed -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+    <link rel="shortcut icon" href="https://great.wzznft.com/i/2023/01/04/ihw19q.png">
+  
+
+  
+
+  
+
+
+  
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+  
+
+<header class="header"><div class="logo-wrap"><a class="title" href="/"><div class="main" ff="title">LXA</div><div class="sub normal cap">LXA的独立博客</div><div class="sub hover cap" style="opacity:0"> LXA's Blog</div></a></div>
+
+<nav class="menu dis-select"></nav>
+</header>
+
+
+<div class="widgets">
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">No Results!</div></div></div></widget>
+
+
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">前端</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS"><span class="toc-text">CSS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#margin"><span class="toc-text">margin</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#box-sizing"><span class="toc-text">box-sizing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#position%E5%90%84%E4%B8%AA%E5%8F%96%E5%80%BC"><span class="toc-text">position各个取值:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#clear-%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8"><span class="toc-text">clear(清除浮动)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript"><span class="toc-text">JavaScript</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JS%E7%9A%84%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F%E4%B8%8E%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F"><span class="toc-text">JS的调用方式与执行顺序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E4%B8%8E%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">变量与运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E4%B8%8E%E8%BE%93%E5%87%BA"><span class="toc-text">输入与输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E8%AF%AD%E5%8F%A5"><span class="toc-text">判断语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5"><span class="toc-text">循环语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%82%E8%AE%B0"><span class="toc-text">杂记</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Array-from"><span class="toc-text">Array.from()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#transitionend%E4%BA%8B%E4%BB%B6"><span class="toc-text">transitionend事件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#setInterval-%E5%87%BD%E6%95%B0"><span class="toc-text">setInterval()函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#transition-timing-function"><span class="toc-text">transition-timing-function</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#align-items"><span class="toc-text">align-items</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#transform-origin"><span class="toc-text">transform-origin</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#change"><span class="toc-text">change</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#text-align"><span class="toc-text">text-align</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Array-prototype-reduce"><span class="toc-text">Array.prototype.reduce()</span></a></li></ol></li></ol></li></ol></div></div></widget>
+
+
+
+
+</div>
+
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a><span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a></div><div id="post-meta">Posted on&nbsp;<time datetime="2023-01-04T02:46:39.068Z">2023-01-04</time></div></div>
+
+<article class='md-text content post'>
+<h1 class="article-title"><span>前端</span></h1>
+<p>前端的学习记录，多为零碎知识点</p>
+<span id="more"></span>
+
+<h1 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h1><p><strong>响应式布局：</strong></p>
+<p>能够适应 <strong>不同大小</strong>界面的布局。</p>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><h3 id="margin"><a href="#margin" class="headerlink" title="margin"></a>margin</h3><p><code>margin</code>属性为给定元素设置四个方向的外边距属性</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 应用于所有边 */</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">1em</span>;</span><br><span class="line"><span class="attribute">margin</span>: -<span class="number">3px</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 上边下边 | 左边右边 */</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">5%</span> auto;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 上边 | 左边右边 | 下边 */</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">1em</span> auto <span class="number">2em</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 上边 | 右边 | 下边 | 左边 */</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">2px</span> <span class="number">1em</span> <span class="number">0</span> auto;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 全局值 */</span></span><br><span class="line"><span class="attribute">margin</span>: inherit;</span><br><span class="line"><span class="attribute">margin</span>: initial;</span><br><span class="line"><span class="attribute">margin</span>: unset;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>auto可以在需要<strong>居中</strong>时使用。</p>
+<h3 id="box-sizing"><a href="#box-sizing" class="headerlink" title="box-sizing"></a>box-sizing</h3><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://great.wzznft.com/i/2023/01/04/i775ei.png" alt="border-box"></p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://great.wzznft.com/i/2023/01/04/i7p5bh.png" alt="content-box"></p>
+<p>在 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">CSS 盒子模型</a>的默认定义里，你对一个元素所设置的 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/width"><code>width</code></a> 与 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/height"><code>height</code></a> 只会应用到这个元素的内容区。如果这个元素有任何的 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border"><code>border</code></a> 或 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding"><code>padding</code></a> ，绘制到屏幕上时的盒子宽度和高度会加上设置的边框和内边距值。这意味着当你调整一个元素的宽度和高度时需要时刻注意到这个<strong>元素的边框和内边距</strong>。当我们实现<strong>响应式布局</strong>时，这个特点尤其烦人。</p>
+<p>box-sizing 属性可以被用来调整这些表现：</p>
+<ul>
+<li><code>content-box</code> 是默认值。如果你设置一个元素的宽为 100px，那么这个元素的内容区会有 100px 宽，并且任何边框和内边距的宽度都会被增加到最后绘制出来的元素宽度中。</li>
+<li><code>border-box</code> 告诉浏览器：你想要设置的边框和内边距的值是包含在 width 内的。也就是说，如果你将一个元素的 width 设为 100px，那么这 100px 会包含它的 border 和 padding，内容区的实际宽度是 width 减去 (border + padding) 的值。大多数情况下，这使得我们更容易地设定一个元素的宽高。</li>
+</ul>
+<p><code>border-box</code>不包含<code>margin</code></p>
+<h3 id="position各个取值"><a href="#position各个取值" class="headerlink" title="position各个取值:"></a>position各个取值:</h3><p><code>static</code></p>
+<p>该关键字指定元素使用正常的布局行为，即元素在文档常规流中当前的布局位置。此时 <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> 和 <code>z-index</code> 属性<strong>无效</strong>。</p>
+<p><code>relative</code></p>
+<p>该关键字下，元素先放置在未添加定位时的位置，再在不改变页面布局的前提下调整元素位置（因此会在此元素未添加定位时所在位置留下空白）。position:relative 对 table-*-group, table-row, table-column, table-cell, table-caption 元素无效。</p>
+<p><code>absolute</code></p>
+<p>元素会被移出正常文档流，并不为元素预留空间，通过指定元素相对于最近的非 static 定位祖先元素的偏移，来确定元素位置。绝对定位的元素可以设置外边距（margins），且不会与其他边距合并。</p>
+<p><code>fixed</code></p>
+<p>元素会被移出正常文档流，并不为元素预留空间，而是通过指定元素相对于屏幕视口（viewport）的位置来指定元素位置。元素的位置在屏幕滚动时不会改变。打印时，元素会出现在的<strong>每页的固定位置</strong>。<code>fixed</code> 属性会创建新的层叠上下文。当元素祖先的 <code>transform</code>, <code>perspective</code> 或 <code>filter</code> 属性非 <code>none</code> 时，容器由视口改为该祖先。(就像是<strong>固定在</strong>你的屏幕上了)</p>
+<p><code>sticky</code></p>
+<p>元素根据正常文档流进行定位，然后相对它的<em>最近滚动祖先（nearest scrolling ancestor）</em>和 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Containing_block">containing block</a> (最近块级祖先 nearest block-level ancestor)，包括 table-related 元素，基于<code>top</code>, <code>right</code>, <code>bottom</code>, 和 <code>left</code>的值进行偏移。偏移值不会影响任何其他元素的位置。 该值总是创建一个新的<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context">层叠上下文（stacking context</a>）。注意，一个 sticky 元素会“固定”在离它最近的一个拥有“滚动机制”的祖先上（当该祖先的<code>overflow</code> 是 <code>hidden</code>, <code>scroll</code>, <code>auto</code>, 或 <code>overlay</code>时），即便这个祖先不是最近的真实可滚动祖先。这有效地抑制了任何“sticky”行为（详情见<a target="_blank" rel="noopener" href="https://github.com/w3c/csswg-drafts/issues/865">Github issue on W3C CSSWG</a>）。</p>
+<p>（也固定在你的屏幕上，但是当你滑动到这个东西的正常位置后，他就正常了）</p>
+<h3 id="clear-清除浮动"><a href="#clear-清除浮动" class="headerlink" title="clear(清除浮动)"></a>clear(清除浮动)</h3><p><strong><code>clear</code></strong> <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS">CSS</a> 属性指定一个元素是否必须移动 (清除浮动后) 到在它之前的浮动元素<strong>下面</strong>。<code>clear</code> 属性适用于浮动和非浮动元素。</p>
+<p>注意是下面，已经指定好方位了。</p>
+<p><strong><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/clear#%E5%80%BC">值</a></strong></p>
+<ul>
+<li><p><code>none</code></p>
+<p>元素<em>不会</em>被向下移动以清除浮动。</p>
+</li>
+<li><p><code>left</code></p>
+<p>元素被向下移动以清除左浮动。</p>
+</li>
+<li><p><code>right</code></p>
+<p>元素被向下移动以清除右浮动。</p>
+</li>
+<li><p><code>both</code></p>
+<p>元素被向下移动以清除左右浮动。</p>
+</li>
+<li><p><code>inline-start</code></p>
+<p>元素被向下移动以清除其包含块的起始侧浮动，即 ltr 时清除左浮动，rtl 时清除右浮动。</p>
+</li>
+<li><p><code>inline-end</code></p>
+<p>元素被向下移动以清除其包含块的结束侧浮动，即 ltr 时清除右浮动，rtl 时清除左浮动。</p>
+</li>
+</ul>
+<h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><h3 id="JS的调用方式与执行顺序"><a href="#JS的调用方式与执行顺序" class="headerlink" title="JS的调用方式与执行顺序"></a>JS的调用方式与执行顺序</h3><p><strong>使用方式</strong></p>
+<p>HTML页面中的任意位置加上<code>&lt;script type=&quot;module&quot;&gt;&lt;/script&gt;</code>标签即可。</p>
+<p>常见使用方式有以下几种：</p>
+<p>直接在<code>&lt;script type=&quot;module&quot;&gt;&lt;/script&gt;</code>标签内写JS代码。<br>直接引入文件：<code>&lt;script type=&quot;module&quot; src=&quot;/static/js/index.js&quot;&gt;&lt;/script&gt;</code>。<br>将所需的代码通过<code>import</code>关键字引入到当前作用域。<br>例如：</p>
+<p><code>/static/js/index.js</code>文件中的内容为：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">&quot;acwing&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">print</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> &#123;</span><br><span class="line">    name,</span><br><span class="line">    print</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><code>&lt;script type=&quot;module&quot;&gt;&lt;/script&gt;</code>中的内容为:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;module&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">import</span> &#123; name, print &#125; <span class="keyword">from</span> <span class="string">&quot;/static/js/index.js&quot;</span>;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="variable language_">console</span>.<span class="title function_">log</span>(name);</span></span><br><span class="line"><span class="language-javascript">    <span class="title function_">print</span>();</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>执行顺序</strong><br>类似于HTML与CSS，按从上到下的顺序执行；<br>事件驱动执行；</p>
+<p><strong>HTML, CSS, JavaScript三者之间的关系</strong><br>CSS控制HTML<br>JavaScript控制HTML与CSS<br>为了方便开发与维护，尽量按照上述顺序写代码。例如：不要在HTML中调用JavaScript中的函数。</p>
+<p><code>script type=&quot;module&quot;</code>限制变量的作用域</p>
+<h3 id="变量与运算符"><a href="#变量与运算符" class="headerlink" title="变量与运算符"></a>变量与运算符</h3><p><code>let</code>与<code>const</code></p>
+<p>用来生命变量，作用范围为当前作用域。</p>
+<ul>
+<li><code>let</code>用来定义变量；</li>
+<li><code>const</code>用来定义<strong>常量</strong></li>
+</ul>
+<p>例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> s = <span class="string">&quot;acwing&quot;</span>, x = <span class="number">5</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> d = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;yxc&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">18</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> n = <span class="number">100</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>变量类型</strong></p>
+<ul>
+<li><code>number</code>：数值变量，例如1, 2.5</li>
+<li><code>string</code>：字符串，例如”acwing”, ‘yxc’，单引号与双引号均可。字符串中的每个字符为<strong>只读</strong>类型。</li>
+<li><code>boolean</code>：布尔值，例如true, false</li>
+<li><code>object</code>：对象，类似于C++中的指针，例如[1, 2, 3]，{name: “yxc”, age: 18}，null</li>
+<li>undefined：未定义的变量</li>
+</ul>
+<p>类似于Python，JavaScript中的变量类型可以动态变化。</p>
+<hr>
+<p><strong>运算符</strong></p>
+<p>与C++、Python、Java类似，不同点：</p>
+<ul>
+<li>**表示乘方</li>
+<li>等于与不等于用&#x3D;&#x3D;&#x3D;和!&#x3D;&#x3D;</li>
+</ul>
+<p><code>parseInt(number)</code>取整</p>
+<h3 id="输入与输出"><a href="#输入与输出" class="headerlink" title="输入与输出"></a>输入与输出</h3><p><strong>输入</strong></p>
+<ul>
+<li>从HTML与用户的交互中输入信息，例如通过input、textarea等标签获取用户的键盘输入，通过click、hover等事件获取用户的鼠标输入。</li>
+<li>通过<code>Ajax</code>与<code>WebSocket</code>从服务器端获取输入</li>
+<li>标准输入，参考AcWing 1. A + B</li>
+</ul>
+<hr>
+<p><strong>输出</strong></p>
+<ul>
+<li>调试用console.log，会将信息输出到浏览器控制台</li>
+<li>改变当前页面的HTML与CSS</li>
+<li>通过<code>Ajax</code>与<code>WebSocket</code>将结果返回到服务器</li>
+</ul>
+<hr>
+<p><strong>格式化字符串</strong></p>
+<p>字符串中填入数值:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name = <span class="string">&#x27;yxc&#x27;</span>, age = <span class="number">18</span>;</span><br><span class="line"><span class="keyword">let</span> s = <span class="string">`My name is <span class="subst">$&#123;name&#125;</span>, I&#x27;m <span class="subst">$&#123;age&#125;</span> years old.`</span>;</span><br></pre></td></tr></table></figure>
+
+<p>定义多行字符串:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> s = </span><br><span class="line"><span class="string">`&lt;div&gt;</span></span><br><span class="line"><span class="string">    &lt;h2&gt;标题&lt;/h2&gt;</span></span><br><span class="line"><span class="string">    &lt;p&gt;段落&lt;/p&gt;</span></span><br><span class="line"><span class="string">/div&gt;`</span></span><br></pre></td></tr></table></figure>
+
+<p>保留两位小数如何输出:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> x = <span class="number">1.234567</span>;</span><br><span class="line"><span class="keyword">let</span> s = <span class="string">`<span class="subst">$&#123;x.toFixed(<span class="number">2</span>)&#125;</span>`</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> input = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;textarea&#x27;</span>)</span><br><span class="line"><span class="keyword">let</span> run = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;button&#x27;</span>)</span><br><span class="line"><span class="keyword">let</span> output = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;pre&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">main</span>(<span class="params"></span>) &#123;</span><br><span class="line">    run.<span class="title function_">addEventListener</span>(<span class="string">&quot;click&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        输入两个数，计算两个数的和</span></span><br><span class="line"><span class="comment">        let [a, b] = input.value.split(&#x27; &#x27;);</span></span><br><span class="line"><span class="comment">        a = parseInt(a), b = parseInt(b);</span></span><br><span class="line"><span class="comment">        output.innerHTML = a + b;</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        输入一个小数，返回向0取整之后的结果</span></span><br><span class="line"><span class="comment">        let a = parseFloat(input.value)</span></span><br><span class="line"><span class="comment">        output.innerHTML = parseInt(a)</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line"></span><br><span class="line">        </span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> &#123;</span><br><span class="line">    main</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="判断语句"><a href="#判断语句" class="headerlink" title="判断语句"></a>判断语句</h3><p>和C++一样。</p>
+<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><p>感觉和C++一样</p>
+<h3 id="杂记"><a href="#杂记" class="headerlink" title="杂记"></a>杂记</h3><h4 id="Array-from"><a href="#Array-from" class="headerlink" title="Array.from()"></a>Array.from()</h4><p><strong><code>Array.from()</code></strong> 方法对一个类似数组或可迭代对象创建一个新的，浅拷贝的数组实例。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Array</span>.<span class="title function_">from</span>(<span class="string">&#x27;foo&#x27;</span>));</span><br><span class="line"><span class="comment">// expected output: Array [&quot;f&quot;, &quot;o&quot;, &quot;o&quot;]</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Array</span>.<span class="title function_">from</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="function"><span class="params">x</span> =&gt;</span> x + x));</span><br><span class="line"><span class="comment">// expected output: Array [2, 4, 6]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="transitionend事件"><a href="#transitionend事件" class="headerlink" title="transitionend事件"></a>transitionend事件</h4><p>transitionend事件在CSS完成过渡后触发</p>
+<p>例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">keys.<span class="title function_">forEach</span>(<span class="function"><span class="params">a</span> =&gt;</span> a.<span class="title function_">addEventListener</span>(<span class="string">&#x27;transitionend&#x27;</span>, removeTransition))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>类似于给一个标签添加了一个动画，在动画结束之后，也就是transition设定的时间结束之后，这个事件才开始执行。</p>
+<h4 id="setInterval-函数"><a href="#setInterval-函数" class="headerlink" title="setInterval()函数"></a>setInterval()函数</h4><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window"><code>Window</code></a> 和 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Worker"><code>Worker</code></a> 接口提供的 <strong><code>setInterval()</code></strong> 方法重复调用一个函数或执行一个代码片段，在每次调用之间具有固定的时间间隔。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">setInterval</span>(setDate, <span class="number">1000</span>);</span><br></pre></td></tr></table></figure>
+
+<h4 id="transition-timing-function"><a href="#transition-timing-function" class="headerlink" title="transition-timing-function"></a>transition-timing-function</h4><p>CSS 属性受到 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">transition effect</a>的影响，会产生不断变化的中间值，而 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS">CSS</a> <code>transition-timing-function</code> 属性用来描述这个中间值是怎样计算的。实质上，通过这个函数会建立一条加速度曲线，因此在整个 transition 变化过程中，变化速度可以不断改变。</p>
+<p>这条加速度曲线被<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function">&#96;&#96; (en-US)</a>所定义，之后作用到每个 CSS 属性的过渡。</p>
+<p>你可以规定多个 timing function，通过使用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition-property"><code>transition-property</code></a>属性，可以根据主列表 (transition property 的列表) 给每个 CSS 属性应用相应的 timing function.如果 timing function 的个数比主列表中数量少，缺少的值被设置为初始值（ease） 。如果 timing function 比主列表要多，timing function 函数列表会被截断至合适的大小。这两种情况下声明的 CSS 属性都是有效的。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">.<span class="property">hand</span> &#123;</span><br><span class="line">    <span class="attr">width</span>: <span class="number">50</span>%;</span><br><span class="line">    <span class="attr">height</span>: 6px;</span><br><span class="line">    background-<span class="attr">color</span>: black;</span><br><span class="line">    <span class="attr">top</span>: <span class="number">50</span>%;</span><br><span class="line">    <span class="attr">position</span>: absolute;</span><br><span class="line"></span><br><span class="line">    transform-<span class="attr">origin</span>: <span class="number">100</span>%;</span><br><span class="line">    <span class="attr">transform</span>: <span class="title function_">rotate</span>(90deg);</span><br><span class="line">    <span class="attr">transition</span>: all .05s;</span><br><span class="line">    transition-timing-<span class="attr">function</span>: cubic-<span class="title function_">bezier</span>(<span class="number">0.1</span>, <span class="number">2.7</span>, <span class="number">0.58</span>, <span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果是表盘的指针移动时会有振动的效果。</p>
+<h4 id="align-items"><a href="#align-items" class="headerlink" title="align-items"></a>align-items</h4><p>CSS align-items 属性将所有直接子节点上的 align-self 值设置为一个组。align-self 属性设置项目在其包含块中在交叉轴方向上的对齐方式。</p>
+<h4 id="transform-origin"><a href="#transform-origin" class="headerlink" title="transform-origin"></a>transform-origin</h4><p><strong><code>transform-origin</code></strong> CSS 属性让你更改一个元素变形的原点。</p>
+<p>类似于更改旋转的中心点，围绕哪个点旋转。</p>
+<h4 id="change"><a href="#change" class="headerlink" title="change"></a>change</h4><p>当用户更改&lt;input&gt;、&lt;select&gt;、&lt;textarea&gt;元素的值并提交这个更改时，<code>change</code> 事件在这些元素上触发。和 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/input_event"><code>input</code></a> 事件不一样，<code>change</code> 事件并不是每次元素的 <code>value</code> 改变时都会触发。</p>
+<h4 id="text-align"><a href="#text-align" class="headerlink" title="text-align"></a>text-align</h4><p><code>text-align</code> CSS 属性定义行内内容（例如文字）如何相对它的块父元素对齐。<code>text-align</code> 并不控制块元素自己的对齐，只控制它的行内内容的对齐。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">text-align</span>:center//常用于居中。</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="Array-prototype-reduce"><a href="#Array-prototype-reduce" class="headerlink" title="Array.prototype.reduce()"></a>Array.prototype.reduce()</h4><p><strong><code>reduce()</code></strong> 方法对数组中的<strong>每个元素</strong>按序执行一个由您提供的 <strong>reducer</strong> 函数，每一次运行 <strong>reducer</strong> 会将<strong>先前元素的计算结果作为参数传入</strong>，最后将其结果汇总为单个返回值。</p>
+<p>第一次执行回调函数时，不存在“上一次的计算结果”。如果需要回调函数从数组索引为 0 的元素开始执行，则需要传递初始值。否则，数组索引为 0 的元素将被作为初始值 <em>initialValue</em>，迭代器将从第二个元素开始执行（索引为 1 而不是 0）。</p>
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>License</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">Older</div><a href="/2023/01/04/ACM%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9%EF%BC%8C%E5%B0%8F%E6%A8%A1%E6%9D%BF%E8%AE%B0%E5%BD%95/">ACM小知识点</a></div></section></div>
+
+
+
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本站由 <a href="/">@anonymity</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.version = '1.18.5';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.18.5';
+  stellar.config = {
+    date_suffix: {
+      just: 'Just',
+      min: 'minutes ago',
+      hour: 'hours ago',
+      day: 'days ago',
+      month: 'months ago',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
+  }
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>
