@@ -106,7 +106,7 @@
 <p>做算法题时的一些用的较少，但是在适用场合会非常有用的小方法。</p>
 <span id="more"></span>
 
-<h1 id="ACM小知识点，小模板记录"><a href="#ACM小知识点，小模板记录" class="headerlink" title="ACM小知识点，小模板记录"></a>ACM小知识点，小模板记录</h1><h2 id="欧几里得算法求最大公约数："><a href="#欧几里得算法求最大公约数：" class="headerlink" title="欧几里得算法求最大公约数："></a>欧几里得算法求最大公约数：</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">gcd</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> b ? <span class="built_in">gcd</span>(b,a%b):a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="ACM小知识点，小模板记录"><a href="#ACM小知识点，小模板记录" class="headerlink" title="ACM小知识点，小模板记录"></a>ACM小知识点，小模板记录</h1><h2 id="欧几里得算法求最大公约数："><a href="#欧几里得算法求最大公约数：" class="headerlink" title="欧几里得算法求最大公约数："></a>欧几里得算法求最大公约数：</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">gcd</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> b ? <span class="built_in">gcd</span>(b,a%b):a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <hr>
 <h2 id="最小公倍数的性质："><a href="#最小公倍数的性质：" class="headerlink" title="最小公倍数的性质："></a>最小公倍数的性质：</h2><p>[a,b] &#x3D; a*b&#x2F;(a,b)</p>
@@ -114,15 +114,15 @@
 <p>(a,b)为最大公约数</p>
 <hr>
 <h2 id="cin和cout的加速"><a href="#cin和cout的加速" class="headerlink" title="cin和cout的加速"></a>cin和cout的加速</h2><p>有的地方不让用。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);<span class="comment">//消除输入输出缓存</span></span><br><span class="line">std::cin.<span class="built_in">tie</span>(<span class="number">0</span>);<span class="comment">//解除cin与cout的绑定，加快速率</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);<span class="comment">//消除输入输出缓存</span></span><br><span class="line">std::cin.<span class="built_in">tie</span>(<span class="number">0</span>);<span class="comment">//解除cin与cout的绑定，加快速率</span></span><br></pre></td></tr></table></figure>
 <div class="tag-plugin note" ><div class="body"><p>第二个好像可以不用，程序中只需要第一行就能大幅加快速度</p></div></div>
 
 <div class="tag-plugin note" color="red"><div class="body"><p>还是用print和scanf吧，这个东西不太稳定</p></div></div>
 
 <hr>
-<h2 id="二元数对的自定义"><a href="#二元数对的自定义" class="headerlink" title="二元数对的自定义"></a>二元数对的自定义</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="type">int</span>,<span class="type">int</span>&gt; PII;</span><br></pre></td></tr></table></figure>
+<h2 id="二元数对的自定义"><a href="#二元数对的自定义" class="headerlink" title="二元数对的自定义"></a>二元数对的自定义</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="type">int</span>,<span class="type">int</span>&gt; PII;</span><br></pre></td></tr></table></figure>
 
-<h2 id="统一修改数组的值"><a href="#统一修改数组的值" class="headerlink" title="统一修改数组的值"></a>统一修改数组的值</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">memset</span>(d,<span class="number">-1</span>,<span class="keyword">sizeof</span> d);</span><br></pre></td></tr></table></figure>
+<h2 id="统一修改数组的值"><a href="#统一修改数组的值" class="headerlink" title="统一修改数组的值"></a>统一修改数组的值</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">memset</span>(d,<span class="number">-1</span>,<span class="keyword">sizeof</span> d);</span><br></pre></td></tr></table></figure>
 
 <p>头文件是:<code>#include&lt;cstring&gt;</code></p>
 
